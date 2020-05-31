@@ -1,0 +1,68 @@
+统一格式(general format)：
+日期(date)：
+Q: 错误信息，或用词（而非句子）描述的问题
+A: 解决方案
+Note: optional
+Tag: 全部小写字母，空格使用_代替，从小集合到大集合，tag间空格分隔  <all_lowercase>
+
+
+2020.2.23
+Q: #include <ros/ros.h>  fatal error: ros/ros.h: No such file or directory 
+A: add include_directories(${catkin_INCLUDE_DIRS}) in CMakeLists.txt
+Note: Use default setting in CMakeLists.txt
+Tag: <cpp> <ros> <ubuntu> <linux>
+
+2020.3.10
+Q: pip install/python in cmd: invalid syntax
+A: add path of pip(~/Python/Script) to system variable, not user variable
+Tag: <path> <cmd> <python> <install>
+
+2020.3.19
+Q: setup.bash    bash: No such file or directory
+A: ~/.bashrc, add path for setup.bash in the file
+Tag: <setup.bash> <ros> <ubuntu> <linux>
+
+2020.3.22
+Q: rosrun rviz rviz 
+rviz: Waiting for master Could not contact ROS master at [http://localhost:11311
+A: run roscore first
+Tag: <rviz> <ros> <ubuntu> <linux>
+
+2020.5.27
+Q: makefile:2: *** missing separator.  Stop.
+A: add a tab before the command in the makefile file
+Tag: <makefile>
+
+Q: 'string' does not name a type
+A: 
+#include <string>
+using std::string;
+Tag: <c++> <cpp>
+
+Q: undefined reference to operator new[]
+A: use g++ instead of gcc to compile
+Tag: <c++> <cpp> <gcc> <g++> <compile>
+
+Q: when use a namespace,
+undefined reference to 'main'
+collect2: error: ld returned 1 exit status
+A: put main() out of the namespace and replace class in the main() with namespace::class
+Tag: <main> <namespace> <c++> <cpp>
+
+2020.5.30
+Q: use template and subclass at the same time in c++, one of the following errors:
+need 'typename' before ... because ... is a dependent scope
+invalid use of template-name ... without an argument list
+A:
+when implement,
+template<class V>
+typename Class<V>::Subclass Class<V>::func(){ ...
+Tag: <template> <subclass> <c++> <cpp>
+
+2020.5.31
+Q: put template<class T> definition and implementation in .h and .cpp separately,
+when calling in main():
+undefined reference to 'Example<int> :: func()'
+A: put the definition and implementation in the same file
+Note: template doesn't create a class unless specify
+Tag: <template> <encapsulation> <c++> <cpp>
