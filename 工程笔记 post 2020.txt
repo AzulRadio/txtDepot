@@ -66,3 +66,12 @@ undefined reference to 'Example<int> :: func()'
 A: put the definition and implementation in the same file
 Note: template doesn't create a class unless specify
 Tag: <template> <encapsulation> <c++> <cpp>
+
+2020.6.11
+Q: KeyError 1 (Python)
+A: You unintentionally call the index before define it.
+Tag: <python>
+
+Q: numpy RAM explode #1
+A: np.ravel() will blow up your RAM
+Tag: <numpy> <RAM> <python>
