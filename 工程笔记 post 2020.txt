@@ -75,3 +75,20 @@ Tag: <python>
 Q: numpy RAM explode #1
 A: np.ravel() will blow up your RAM
 Tag: <numpy> <RAM> <python>
+
+2020.6.13
+Q: use np.ones() as an index array
+IndexError: arrays used as indices must be of integer (or boolean) type
+A: np.ones(length, dtype = np.int8)
+the default ones are floats.
+Tag: <numpy> <python>
+
+Q: n-th element  every row  every column  2D np.array  index array
+A: np.choose()
+or array[np.arange(row_num), index_array]
+Tag: <numpy> <python>
+
+2020.6.16
+Q：np.max() on np.array  TypeError or AxisError
+A: np.maximum()
+Tag: <numpy> <python>
