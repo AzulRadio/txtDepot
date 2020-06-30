@@ -91,4 +91,8 @@ Tag: <numpy> <python>
 2020.6.16
 Q：np.max() on np.array  TypeError or AxisError
 A: np.maximum()
-Tag: <numpy> <python>
+Tag: <numpy> <python
+
+2020.6.25
+Q: TypeError: unsupported operand type(s) for ...: 'NoneType' and '...'
+A: variables in loops should always define before the loops
