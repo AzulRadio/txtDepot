@@ -91,8 +91,14 @@ Tag: <numpy> <python>
 2020.6.16
 Q：np.max() on np.array  TypeError or AxisError
 A: np.maximum()
-Tag: <numpy> <python
+Tag: <numpy> <python>
 
 2020.6.25
 Q: TypeError: unsupported operand type(s) for ...: 'NoneType' and '...'
 A: variables in loops should always define before the loops
+Tag: <python>
+
+2020.7.1
+Q: raise ReadTimeoutError<self._pool, None, "Read timed out.">
+A: pip3 --default-timeout=100 install #pkg-name# -i https://pypi.tuna.tsinghua.edu.cn/simple
+Tag: <pip> <python> <install>
