@@ -102,3 +102,13 @@ Tag: <python>
 Q: raise ReadTimeoutError<self._pool, None, "Read timed out.">
 A: pip3 --default-timeout=100 install #pkg-name# -i https://pypi.tuna.tsinghua.edu.cn/simple
 Tag: <pip> <python> <install>
+
+2020.7.3
+Q: super(type, obj): obj must be an instance or subtype of type
+A: probabaly a bug related to Jupiter notebook. Restart the kernel.
+Tag: <Jupiter notebook> <Colab> <python>
+
+2020.7.4
+Q: OSError: [WinError 193] %1 不是有效的 Win32 应用程序
+A: happens when try to install amd64 pkg on python-32bits
+Tag: <pip> <python> <install>
