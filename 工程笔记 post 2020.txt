@@ -112,3 +112,15 @@ Tag: <Jupiter notebook> <Colab> <python>
 Q: OSError: [WinError 193] %1 不是有效的 Win32 应用程序
 A: happens when try to install amd64 pkg on python-32bits
 Tag: <pip> <python> <install>
+
+2020.8.1
+Q: Could not find a package configuration file provided by "roslint"
+A: sudo apt-get ros-ROS_VERSION(Ex: melodic)-roslint
+Tag: <ros> <ubuntu>
+
+Q: ROS:
+AttributeError: 'module' object has no attribute ‘JointStatePublisher’
+$ source /opt/ros/melodic/setup.bash -> problem disappears
+$ source /home/ros/devel/setup.bash -> problem shows up again
+A: package collision, reboot ros workspace
+Tag: <ros>
