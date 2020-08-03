@@ -44,3 +44,39 @@ erase will automatically make iterator + 1 become the next unremoved element.
 vector sort()
 sort(vector.begin(), vector.end());
 <cpp> <vector> <sort>
+
+2020.8.2
+5.
+#11
+Two Pointer approach:
+//
+two iterators at begin() and end():
+if (condition A) { 
+	move the left iterator right
+} else { 
+	move the right iterator left
+}
+//
+Used to find maximum with two variables.
+O(n)
+<algorithm>
+
+2020.8.3
+6.
+#34
+lower_bound(iterator, iterator, value)
+return index for some value in a sorted vector
+<cpp> <binary_search>
+
+binary search (lower bound)
+start = 0, end = size - 1
+while (start <= end) {
+	mid = (end - start) / 2 + start
+	if ()
+		start = mid + 1
+	else 
+		end = mid - 1
+}
+return start <------ /* !!! */ 
+<algorithm>
+
