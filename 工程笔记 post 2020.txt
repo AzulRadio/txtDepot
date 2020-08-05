@@ -112,3 +112,8 @@ Tag: <Jupiter notebook> <Colab> <python>
 Q: OSError: [WinError 193] %1 不是有效的 Win32 应用程序
 A: happens when try to install amd64 pkg on python-32bits
 Tag: <pip> <python> <install>
+
+2020.7.21
+Q: 'vector' was not declared in this scope
+A: using std::vector;
+Tag: <cpp>
