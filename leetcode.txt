@@ -1,0 +1,82 @@
+统一格式(general format)：
+日期(date)：
+题号(Question Number)：
+Code:
+Note: 
+Tag: <all_lowercase> <language>
+
+2020.7.31
+1.
+#1
+//
+unordered_map<int, int> map;
+map[i] = 1;
+//
+N: unordered_map is Hashmap
+<cpp> <hashmap>
+
+2.
+#26
+// p is an iterator
+if (*p != *(p+1) || (p+1) == nums.end())
+This will cause index out of bound
+==31==ERROR: AddressSanitizer: heap-buffer-overflow
+
+if ((p+1) == nums.end() || *p != *(p+1))
+This will not
+//
+Always checks boundary first.
+<cpp>
+
+3.
+#26
+// using erase()
+for(;iterator != vector.end();)
+if (condition to erase) {
+	vector.erase(iterator);
+} else {
+	iterator++;
+}
+erase will automatically make iterator + 1 become the next unremoved element.
+<cpp> <erase()> <iterator>
+
+4.
+vector sort()
+sort(vector.begin(), vector.end());
+<cpp> <vector> <sort>
+
+2020.8.2
+5.
+#11
+Two Pointer approach:
+//
+two iterators at begin() and end():
+if (condition A) { 
+	move the left iterator right
+} else { 
+	move the right iterator left
+}
+//
+Used to find maximum with two variables.
+O(n)
+<algorithm>
+
+2020.8.3
+6.
+#34
+lower_bound(iterator, iterator, value)
+return index for some value in a sorted vector
+<cpp> <binary_search>
+
+binary search (lower bound)
+start = 0, end = size - 1
+while (start <= end) {
+	mid = (end - start) / 2 + start
+	if ()
+		start = mid + 1
+	else 
+		end = mid - 1
+}
+return start <------ /* !!! */ 
+<algorithm>
+

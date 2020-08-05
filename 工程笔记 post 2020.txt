@@ -117,3 +117,19 @@ Tag: <pip> <python> <install>
 Q: 'vector' was not declared in this scope
 A: using std::vector;
 Tag: <cpp>
+
+2020.8.1
+Q: Could not find a package configuration file provided by "roslint"
+A: sudo apt-get ros-ROS_VERSION(Ex: melodic)-roslint
+Tag: <ros> <ubuntu>
+
+Q: AttributeError: 'module' object has no attribute ‘JointStatePublisher’
+$ source /opt/ros/melodic/setup.bash -> problem disappears
+$ source /home/ros/devel/setup.bash -> problem shows up again
+A: package collision, reboot ros workspace
+Tag: <ros>
+
+2020.8.2
+Q: Deprecated: xacro tag 'property' w/o 'xacro:' xml namespace prefix (will be forbidden in Noetic)
+A: find . -iname "*.xacro" | xargs sed -i 's#<\([/]\?\)\(if\|unless\|include\|arg\|property\|macro\|insert_block\)#<\1xacro:\2#g'
+Tag: <xacro> <ros>
