@@ -113,6 +113,11 @@ Q: OSError: [WinError 193] %1 不是有效的 Win32 应用程序
 A: happens when try to install amd64 pkg on python-32bits
 Tag: <pip> <python> <install>
 
+2020.7.21
+Q: 'vector' was not declared in this scope
+A: using std::vector;
+Tag: <cpp>
+
 2020.8.1
 Q: Could not find a package configuration file provided by "roslint"
 A: sudo apt-get ros-ROS_VERSION(Ex: melodic)-roslint
