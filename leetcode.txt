@@ -80,3 +80,30 @@ while (start <= end) {
 return start <------ /* !!! */ 
 <algorithm>
 
+2020.8.6
+7.
+#208
+TrieTree
+one node for one character and every node has 26 children.
+//
+struct trieNode {
+        bool isEnd;
+        unordered_map<char, Node *> child;
+}
+/*
+use a recursive helper function to do the search
+*/
+//
+
+how to insert value into umap:
+//
+unordered_map[key] = value;
+//
+
+you can also do this:
+//
+for loop:
+	Node * temp;
+	umap[key] = temp;
+end loop;
+// <---- it works.
