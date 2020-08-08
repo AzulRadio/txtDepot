@@ -133,3 +133,9 @@ Tag: <ros>
 Q: Deprecated: xacro tag 'property' w/o 'xacro:' xml namespace prefix (will be forbidden in Noetic)
 A: find . -iname "*.xacro" | xargs sed -i 's#<\([/]\?\)\(if\|unless\|include\|arg\|property\|macro\|insert_block\)#<\1xacro:\2#g'
 Tag: <xacro> <ros>
+
+2020.8.8
+Q: ModuleNotFoundError: No module named 'pip'
+OR 
+Could not install packages due to an EnvironmentError: [WinError 5] 拒绝访问。 when try to upgrade pip
+A: python -m ensurepip

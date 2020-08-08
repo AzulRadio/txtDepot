@@ -131,3 +131,19 @@ for (auto & v : umap) {
 }
 //
 <cpp>
+
+2020.8.8
+#August Challenge day 8
+BST but you care about the depth of the row;
+//
+while (queue is not empty) {
+	k = queue.size()
+	while (k--) {
+		/* function */
+		enqueue(curr.left)
+		enqueue(curr.right)
+	}
+}
+//
+don't care:
+remove the inner nested loop
