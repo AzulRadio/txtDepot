@@ -139,3 +139,21 @@ Q: ModuleNotFoundError: No module named 'pip'
 OR 
 Could not install packages due to an EnvironmentError: [WinError 5] 拒绝访问。 when try to upgrade pip
 A: python -m ensurepip
+Tag: <pip> <python>
+
+2020.8.9
+Q: for loop + if - list.remove() can't remove all the designated elements
+A: iterate in a reversed order, for i in list[::-1]
+Tag: <remove> <list> <python>
+
+Q: change composite data type for one instance, all the instances change
+A: composite data type in Python is static-default, basic data type are non-static default
+Tag: <class> <member> <python>
+
+Q: merge: ... not something we can merge
+A: git merge origin/master
+Tag: <git>
+
+Q: Updates were rejected because the tip of your current branch is behind
+A: git pull origin master
+git push
