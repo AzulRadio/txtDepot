@@ -157,3 +157,9 @@ Tag: <git>
 Q: Updates were rejected because the tip of your current branch is behind
 A: git pull origin master
 git push
+Tag: <git>
+
+2020.8.10
+Q: Exception in thread "main" java.lang.UnsupportedClassVersionError
+A: add $jdk_path& to PATH and remove $oracle_default_path$
+Tag: <java>

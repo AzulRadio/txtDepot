@@ -147,3 +147,19 @@ while (queue is not empty) {
 //
 don't care:
 remove the inner nested loop
+
+2020.8.10
+#21
+create linked list:
+need 3 nodes: root, curr, next
+//
+Node root = new Node()
+Node curr = root
+
+while()
+Node next = new Node()
+next.value = value
+curr.next = next
+curr = curr.next
+//
+Tag: <linkedlist> <structure>
