@@ -163,3 +163,19 @@ Tag: <git>
 Q: Exception in thread "main" java.lang.UnsupportedClassVersionError
 A: add $jdk_path& to PATH and remove $oracle_default_path$
 Tag: <java>
+
+2020.8.13
+Q: spawn_model: error
+A: rosrun gazebo_ros spawn_model -urdf -file seven_dof_arm.urdf -model seven_dof_arm
+Tag: <spawn_model> <gazebo_ros> <gazebo> <ros>
+
+Q: stuck at this info
+[INFO] [1597249264.062097, 0.000000]: Waiting for service /gazebo/spawn_urdf
+A: rosrun gazebo_ros gazebo
+Tag: <spawn_model> <gazebo_ros> <gazebo> <ros>
+
+Q: [gazebo-1] process has died [pid xxxxx, exit code 255
+A: killall gzserver
+killall gzclient
+roslaunch gazebo_ros willowgarage_world.launch
+Tag: <gazebo_ros> <gazebo> <ros>

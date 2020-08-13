@@ -24,7 +24,7 @@ if ((p+1) == nums.end() || *p != *(p+1))
 This will not
 //
 Always checks boundary first.
-<cpp>
+<cpp> <debug>
 
 #26
 // using erase()
@@ -55,7 +55,7 @@ if (condition A) {
 //
 Used to find maximum with two variables.
 O(n)
-<algorithm>
+<algorithm> <two_pointers>
 
 2020.8.3
 #34
@@ -73,7 +73,7 @@ while (start <= end) {
 		end = mid - 1
 }
 return start <------ /* !!! */ 
-<algorithm>
+<algorithm> <binary_search>
 
 2020.8.6
 #208
@@ -88,7 +88,7 @@ struct trieNode {
 use a recursive helper function to do the search
 */
 //
-<structure>
+<structure> <trietree>
 
 how to insert value into umap:
 //
@@ -102,7 +102,7 @@ for loop:
 	umap[key] = temp;
 end loop;
 // <---- it works.
-<cpp>
+<cpp> <hashmap>
 
 2020.8.7
 #215
@@ -115,13 +115,13 @@ put the (target-begin)-th element in iter.target(), increasing order.
 make_heap(iter.begin(), iter.end()) ---> void
 heap_pop(iter.begin(), iter.end()) ---> void --> put the popped element in ( iter.end() - 1 )
 //
-<cpp>
+<cpp> <heap>
 
 #August Challenge day 7
 //
 sort(iter.begin(), iter.end()) ----> this is a void function!
 //
-<cpp>
+<cpp> <sort()>
 
 iterate through unordered_map:
 //
@@ -130,7 +130,7 @@ for (auto & v : umap) {
 	v.second ----> value
 }
 //
-<cpp>
+<cpp> <hashmap>
 
 2020.8.8
 #August Challenge day 8
@@ -147,6 +147,7 @@ while (queue is not empty) {
 //
 don't care:
 remove the inner nested loop
+<algorithm> <bst>
 
 2020.8.10
 #21
@@ -162,4 +163,4 @@ next.value = value
 curr.next = next
 curr = curr.next
 //
-Tag: <linkedlist> <structure>
+<structure> <linkedlist> 
