@@ -164,3 +164,22 @@ curr.next = next
 curr = curr.next
 //
 <structure> <linkedlist> 
+
+2020.8.14
+#210
+topological sort
+method 1, dfs:
+➔ let S be a stack of courses
+➔ function dfs(node)
+➔     for each neighbor in adjacency list of node
+➔          dfs(neighbor)
+➔     add node to S
+need to keep a visited-node-list
+need a adjacent node table
+
+method 2, node indegree
+➔ add node with 0 indegree
+➔ node adjacent indegree - 1
+➔ delete it
+➔ repeat
+<algorithm> <topological_sort>

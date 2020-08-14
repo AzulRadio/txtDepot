@@ -179,3 +179,10 @@ A: killall gzserver
 killall gzclient
 roslaunch gazebo_ros willowgarage_world.launch
 Tag: <gazebo_ros> <gazebo> <ros>
+
+2020.8.13
+Q: rosrun image_view image_view image:= /rgbd_camera/depth/image_raw
+[ WARN] [1597331771.483096069]: couldn't register subscriber on topic []
+A: rosrun image_view image_view image:=/rgbd_camera/depth/image_raw
+be careful with 'space'
+Tag: <image_view> <ros>
