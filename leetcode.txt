@@ -183,3 +183,17 @@ method 2, node indegree
 ➔ delete it
 ➔ repeat
 <algorithm> <topological_sort>
+
+2020.8.15
+#435
+sort(iter,iter,comp) 
+(+static, when defined in a class) bool comp (a, b)
+return true, then a < b
+<sort()>
+
+for i in array:
+	if (false condition):
+		...
+	else:
+		prev = curr ----> only set prev when true to find the longest chain
+<algorithm> <greedy>

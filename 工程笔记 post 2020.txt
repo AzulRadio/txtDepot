@@ -186,3 +186,13 @@ Q: rosrun image_view image_view image:= /rgbd_camera/depth/image_raw
 A: rosrun image_view image_view image:=/rgbd_camera/depth/image_raw
 be careful with 'space'
 Tag: <image_view> <ros>
+
+2020.8.14
+Q: [ERROR] Failed to load joint_state_controller
+Controller spawner couldn't find the expected controller_manager ros interface
+A: sudo apt-get install ros-$(ros_version)-gazebo-ros-control ros-$(ros_version)-ros-control ros-$(ros_version)-ros-controllers
+replace $(ros_version) with your ros version
+Tag: <gazebo_ros_control> <ros_control> <gazebo> <ros>
+
+2020.8.15
+Q: ui.pushbutton.clicked.connect(object.func), qt windows crash when uses object function
