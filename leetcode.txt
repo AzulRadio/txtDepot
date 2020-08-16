@@ -197,3 +197,9 @@ for i in array:
 	else:
 		prev = curr ----> only set prev when true to find the longest chain
 <algorithm> <greedy>
+
+2020.8.16
+#123
+dynamic programming:
+if you know how to get to your goal from position K, and there's only limited ways to get to position K, then that's a DP.
+<algorithm> <dynamic_programming>

@@ -195,4 +195,23 @@ replace $(ros_version) with your ros version
 Tag: <gazebo_ros_control> <ros_control> <gazebo> <ros>
 
 2020.8.15
-Q: ui.pushbutton.clicked.connect(object.func), qt windows crash when uses object function
+Q: ui.pushbutton.clicked.connect(object.func), qt windows crash when uses object.function
+A: use static function
+Tag: <pushbutton> <pyqt> <qt>
+
+2020.8.16
+Q: restore file after $git add (give up changes)
+A: git checkout -- <filename>
+Tag: <git_reset> <git_checkout> <git>
+
+Q: export .psd from procreate on iPad to PC
+A: select->share->.psd->copy to Document(an APP)
+Tag: <procreate> <export>
+
+Q: qt designer setStyleSheet(image), but image not shown
+A: wrong url, url format : url(resource/a.png)
+Tag: <setStyleSheet()> <pyqt>
+
+Q: connect(lambda: func(arg)), gui crash when passing in objects
+A: in func: using "object" instead of "self.object"
+Tag: <connect()> <pyqt>
