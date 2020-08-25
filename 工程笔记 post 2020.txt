@@ -215,3 +215,47 @@ Tag: <setStyleSheet()> <pyqt>
 Q: connect(lambda: func(arg)), gui crash when passing in objects
 A: in func: using "object" instead of "self.object"
 Tag: <connect()> <pyqt>
+
+2020.8.17
+Q: when using rosrun, 
+RuntimeError: The robot_description parameter is required and not set. 
+A: rosrun pkg type _ros_description:=".urdf"
+or in launch file <param name="robot_description" textfile="$(find pkgName)/urdf/diff_wheeled_robot.urdf" />
+Tag: <parameter> <ros>
+
+2020.8.22
+Q: member variable's value doesn't match with value set in constructors
+A: you declare another variable with the same name in the constructor.
+Tag: <class_member> <cpp>
+
+2020.8.23
+Q: at line 134 in /tmp/binarydeb/ros-melodic-tf2-0.6.5/src/buffer_core.cpp
+Warning: Invalid argument "/map" passed to canTransform argument target_frame in tf2 frame_ids cannot start with a '/' like:
+A: global_costmap_params.yaml and local_costmap_params.yaml, delete "/"
+Tag: <mastering_ros_book> <ros>
+
+Q: how to #include third-party cpp package. (Console, No IDE, Windows, MinGW)
+A: create CPLUS_INCLUDE_PATH in system parameter, and add the package include folder path to it.
+Tag: <opencv> <#include> <windows> <cpp>
+
+2020.8.24
+Q: undefined reference to `cv::VideoCapture::VideoCapture()
+A: g++ main.cpp -o main `pkg-config --cflags --libs opencv`
+Tag: <opencv> <g++> <ubuntu>
+
+Q: segmetation fault(core dump)  when use opencv func in class func
+A: forget to return
+Tag: <opencv> <cpp>
+
+2020.8.25
+Q: git clone speed up
+A: git clone xxxx.git -> git clone git.sdut.me/xxx.git
+git remote rm origin
+git remote add origin <github URL>
+git pull
+Tag: <remote> <git>
+
+Q: add readme or license when adding a existing repo
+A: git pull –-rebase origin master
+   git push origin master
+Tag: <inital_commit> <git>

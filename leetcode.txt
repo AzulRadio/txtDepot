@@ -202,4 +202,50 @@ for i in array:
 #123
 dynamic programming:
 if you know how to get to your goal from position K, and there's only limited ways to get to position K, then that's a DP.
+//
+bestSale ---> highest profit if you sale at this point
+bestBuy ---> highest profit if you buy at this point
+both can be calculated in one iteration
+//
 <algorithm> <dynamic_programming>
+
+2020.8.18
+#3
+find for vector: find(v.begin(), v.end(), value)
+find for unordered_map: umap.find(key)
+<find()> <cpp>
+
+2020.8.19
+#23
+priority_queue in cpp
+//
+#include <queue>
+//
+<priority_queue> <cpp>
+
+2020.8.21
+measure running time in cpp:
+//
+auto t1 = std::chrono::high_resolution_clock::now();
+duration<double, std::milli> time_span = t2 - t1;
+std::cout << "It took me " << time_span.count() << " milliseconds.";
+//
+<timer> <cpp>
+
+#496
+Next Greater Element:
+stack:
+	while (stack not empty and stack.top < curr) {
+		top = stack.pop
+		top.nextGreater = curr;
+	}
+	stack.push(curr)
+
+stack must be in a descending order
+so compare current element with 1-n top element, if greater, then we find it.
+
+#1032
+Find Word in Character Stream:
+TrieTree:
+but reverse word and find prefix
+<trietree> <algorithm>
