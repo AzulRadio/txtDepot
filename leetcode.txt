@@ -249,3 +249,53 @@ Find Word in Character Stream:
 TrieTree:
 but reverse word and find prefix
 <trietree> <algorithm>
+
+2020.8.26
+#983
+DP to meet certain point:
+start with zero
+DP through every point
+	if point not required:
+		value[i] = value[i-1]
+	else
+		DP(value[i])
+<DP> <algorithm>
+
+python, claim a zero list
+dp=[0 for i in range(...)]
+<list> <python>
+
+2020.8.27
+CS 357
+python: sort list with elem[1] descending then elem[0] ascending:
+list = [(  ,  ),(  ,  ),(  ,  ),(  ,  )]
+//
+list.sort(key = lambda elem: (-elem[1], elem[0]))
+or
+sorted(list, key = lambda elem: (-elem[1], elem[0]))
+//
+<sort> <python>
+
+dict.get(key, default)
+if key doesn't exist, return default
+<dict> <python>
+
+sort with index
+//
+a = [value list]
+b = [index list]
+output = zip(*sorted(zip(a,b)))
+//
+Explain: zip(a,b) -> [(0,val)(1,val)(2,val)...]
+sorted -> sorted
+* -> zip((0, val),(1,val),(2,val)...) -> [(0,1,2...),(val,val,val...)]
+without zip():
+l = sorted((e.start, i) for i, e in enumerate(intervals))
+<sort> <python>
+
+#436
+//
+index = bisect.bisect_left(list, key)
+bisect.bisect_left(list, (key,)) to search in a list of tuples
+//
+<bisect> <python>
