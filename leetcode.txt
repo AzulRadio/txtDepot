@@ -299,3 +299,39 @@ index = bisect.bisect_left(list, key)
 bisect.bisect_left(list, (key,)) to search in a list of tuples
 //
 <bisect> <python>
+
+#952
+union
+set up union list by their common properties, not individual features.
+largest common divdier graph: set list by prime factor
+2: {4,12}, 3: {12, 30}, etc
+then do the union
+<union> <algorithm>
+
+#949
+//
+itertools.permutations(A)
+//
+return all the permutations of A in tuples, (1,2,3), (1,3,2), etc
+<permutation> <python>
+
+#763
+every string with their rightmost index:
+//
+S = some string
+{c:i for i, c in enumerate(S)}
+//
+<dict> <python>
+
+#835 Image Overlap
+Find similar pattern on two binary images:
+(max number of "1"s in the map)
+1. store the coor of "1" of the two images in two umaps
+2. for every coor in umaps1, get the difference between it and every coor in umap2
+3. map the difference to its counts in umap3
+<image> <algorithm>
+
+create class var in python:
+don't need to declare in __init__
+just //self.var = value// in the class function
+<class> <python>

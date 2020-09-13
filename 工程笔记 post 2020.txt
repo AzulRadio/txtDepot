@@ -259,3 +259,50 @@ Q: add readme or license when adding a existing repo
 A: git pull –-rebase origin master
    git push origin master
 Tag: <inital_commit> <git>
+
+2020.9.1
+Q: undefined reference to ‘pthread_create'
+A: g++ main.cpp -lpthread
+
+2020.9.2
+Q: git branch
+fatal: Not a valid object name: 'master'.
+A: branch can only be created after commit
+Tag: <branch> <git>
+
+Q: out_binary, contours, hierarchy = cv.findContours
+ValueError: not enough values to unpack (expected 3, got 2)
+A: contours, hierarchy = cv2.findContours
+Tag: <findContours()> <opencv>
+
+2020.9.3
+Q: TypeError: get() takes no keyword arguments
+A: dict.get(1,0) instead of dict.get(1, default = 0)
+Tag: <dict> <python>
+
+2020.9.4
+Q: a = [1,].extend([2,])
+TypeError: 'NoneType' object is not iterable
+A: extend() return None
+Tag: <extend()> <python>
+
+2020.9.9
+Q: error: (-215:Assertion failed) src_depth != CV_16F && src_depth != CV_32S in function 'convertToShow'
+A: array.astype(np.uint8)
+Tag: <imshow()> <opencv>
+
+Q: imshow(), pic is white but has number
+A: float is white, change data type to int: array.astype(np.uint8)
+Tag: <imshow()> <opencv>
+
+2020.9.14
+Q: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarly unavailable)
+Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is an other process using it?
+A: sudo rm /var/lib/dpkg/lock-frontend       
+sudo rm /var/lib/dpkg/lock
+Tag: <apt> <ubuntu>
+
+Q: ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /var/lib/gems/2.5.0 directory.
+A: add "sudo"
+Tag: <gem>
