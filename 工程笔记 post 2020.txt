@@ -249,7 +249,7 @@ Tag: <opencv> <cpp>
 
 2020.8.25
 Q: git clone speed up
-A: git clone xxxx.git -> git clone git.sdut.me/xxx.git
+A: git clone xxxx.git -> git clone https://github.com.cnpmjs.org/xxx.git
 git remote rm origin
 git remote add origin <github URL>
 git pull
@@ -306,3 +306,7 @@ Q: ERROR:  While executing gem ... (Gem::FilePermissionError)
     You don't have write permissions for the /var/lib/gems/2.5.0 directory.
 A: add "sudo"
 Tag: <gem>
+
+Q: changes in _config.yml doesn't auto reload
+A: it just doesn't. jekyll serve again
+Tag: <jekyll>

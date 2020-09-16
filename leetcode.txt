@@ -335,3 +335,10 @@ create class var in python:
 don't need to declare in __init__
 just //self.var = value// in the class function
 <class> <python>
+
+#421 max XOR in an array:
+int -> 32bits
+so we iterate 32 times through the array, each time one digit.
+lessen the candidate choices as we moving from the leftmost bit to the rightmost
+and we want as more bits on the left as possible
+<bitwise> <algorithm>
