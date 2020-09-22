@@ -139,6 +139,7 @@ Q: ModuleNotFoundError: No module named 'pip'
 OR 
 Could not install packages due to an EnvironmentError: [WinError 5] 拒绝访问。 when try to upgrade pip
 A: python -m ensurepip
+python.exe -m pip install --upgrade pip
 Tag: <pip> <python>
 
 2020.8.9
@@ -310,3 +311,13 @@ Tag: <gem>
 Q: changes in _config.yml doesn't auto reload
 A: it just doesn't. jekyll serve again
 Tag: <jekyll>
+
+2020.9.19
+Q: ERROR: Could not install packages due to an EnvironmentError
+A: pip install --user $pkg-name
+Tag: <pip>
+
+Q: AttributeError: module 'cv2.cv2' has no attribute 'TrackerCSRT_create'
+A: tracker can only be used by "contri" version of opencv
+pip install opencv_contrib_python
+Tag: <tracker> <opencv> <pip>
