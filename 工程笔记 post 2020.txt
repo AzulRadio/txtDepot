@@ -321,3 +321,23 @@ Q: AttributeError: module 'cv2.cv2' has no attribute 'TrackerCSRT_create'
 A: tracker can only be used by "contri" version of opencv
 pip install opencv_contrib_python
 Tag: <tracker> <opencv> <pip>
+
+2020.9.25
+Q: TypeError: Expected Ptr<cv::UMat> for argument 'mat'
+A: frame.astype(np.uint8)
+<numpy.array> <opencv>
+
+2020.10.19
+Q: create a file in folder A, open it, and then cut & paste it in folder B. Now edit and save it, a new file will be created in folder A and file in B shall not change.
+A: notice this.
+<ubuntu> <cut_paste>
+
+2020.11.9
+Q: Resource not found: ROS path [0]=
+A: source devel/setup.bash
+or sudo  gedit ~/.bashrc
+<roslaunch>
+
+Q: gazebo .world file empty
+A: rosrun gazebo_ros gazebo /path/to/.world
+<gazebo> <roslaunch>
