@@ -325,19 +325,47 @@ Tag: <tracker> <opencv> <pip>
 2020.9.25
 Q: TypeError: Expected Ptr<cv::UMat> for argument 'mat'
 A: frame.astype(np.uint8)
-<numpy.array> <opencv>
+Tag: <numpy.array> <opencv>
 
 2020.10.19
 Q: create a file in folder A, open it, and then cut & paste it in folder B. Now edit and save it, a new file will be created in folder A and file in B shall not change.
 A: notice this.
-<ubuntu> <cut_paste>
+Tag: <ubuntu> <cut_paste>
 
 2020.11.9
 Q: Resource not found: ROS path [0]=
 A: source devel/setup.bash
 or sudo  gedit ~/.bashrc
-<roslaunch>
+Tag: <roslaunch>
 
 Q: gazebo .world file empty
 A: rosrun gazebo_ros gazebo /path/to/.world
-<gazebo> <roslaunch>
+Tag: <gazebo> <roslaunch>
+
+2020.11.21
+Q: opencv cmake undefined reference
+A: 
+cmake_minimum_required(VERSION 2.8)
+project( DisplayImage )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( DisplayImage DisplayImage.cpp )
+target_link_libraries( DisplayImage ${OpenCV_LIBS} )
+Tag: <cmake> <opencv>
+
+Q:
+[rosrun] Couldn't find executable named XXX.py 
+[rosrun] Found the following, but they're either not files,
+[rosrun] or not executable:
+A: chmod +777 XXX.py
+Tag: <rospy> <rosrun> <python>
+
+2020.11.24
+Q: Failed to load joint1_position_controller
+Exception thrown while initializing controller 'joint1_position_controller'.
+Could not find resource 'turret_joint' in 'hardware_interface::PositionJointInterface'.
+A: in .yaml file, change 
+type: effort_controllers/JointPositionController
+to 
+position_controllers/JointPositionController
+Tag: <gazebo> <control>
