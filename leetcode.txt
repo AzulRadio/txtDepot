@@ -383,3 +383,20 @@ Python Priority Queue:
 // q.put( (priority, number) ) # smaller priority comes out first
 // q.get()
 // q.qsize()
+
+C style array:
+int arr[10] = {0}; -> all 0's
+
+C++ vector slice: use pointers
+auto a = begin(vector);
+auto b = end(vector);
+*a is the value.
+
+dp with result output: 
+/*
+vector.push_back()
+recurse(vector)
+vector.pop_back()
+*/
+try different options with one array
+to save time and memory
