@@ -354,7 +354,7 @@ def cmp(a,b):
 	XXX
 sorted(key = cmp_to_key(cmp))
 
-pyhton Queue:
+python Queue:
 import queue
 q = Queue()
 q.put(a)
