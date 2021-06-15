@@ -435,3 +435,41 @@ Q: Git push requires username and password
 A: set origin with ssh instead of http
 git remote set-url origin git@github.com:username/repo.git
 Tag: <git> <github>
+
+2021.4.3
+Q: array indexing for matrix 
+or IndexError: shape mismatch: indexing arrays could not be broadcast together with shapes (2,) (10,)
+A: x.T[np.arange(index_array_len), index_array]
+Tag: <python> <numpy> <index>
+
+2021.4.13
+Q: OpenSSL SSL_read: Connection was reset, errno 10054
+A: git config http.postBuffer 524288000
+Tag: <git>
+
+2021.4.19
+Q: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+A: ps aux | grep -i apt
+sudo kill -9 <process id>
+Tag: <apt> <ubuntu>
+
+Q: uninstall ros: E: Unable to locate package
+A: sudo apt-get remove ros-melodic-*
+Tag: <ros> <apt>
+
+Q: Command 'python' not found, did you mean:
+A: sudo ln -s /usr/bin/python3 /usr/bin/python
+Tag: <python>
+
+2021.4.24
+Q: OpenCV, FLANN & ORB
+cv2.error: OpenCV(4.4.0) C:\Users\appveyor\AppData\Local\Temp\1\pip-req-build-j8nxabm_\opencv\modules\flann\src\miniflann.cpp:315: error: (-210:Unsupported format or combination of formats) in function 'cv::flann::buildIndex_'
+A: descriptor should be float, default output are int
+des1 = des1.astype('float32')
+des2 = des2.astype('float32')
+Tag: <slam> <opencv>
+
+2021.6.15
+Q: TypeError: 'numpy.float64' object cannot be interpreted as an integer
+A: np.inf and np.nan are float
+Tag: <numpy> <python>
