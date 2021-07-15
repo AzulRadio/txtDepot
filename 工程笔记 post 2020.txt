@@ -473,3 +473,20 @@ Tag: <slam> <opencv>
 Q: TypeError: 'numpy.float64' object cannot be interpreted as an integer
 A: np.inf and np.nan are float
 Tag: <numpy> <python>
+
+2021.7.1
+Q: can't open webpage
+A: C:\Windows\System32\drivers\etc\hosts
+ipaddress.com
+Tag: <windows> <DNS> <github>
+
+2021.7.15
+Q: git push
+fatal: Authentication failed for
+A: in the openssh window, username = username (not email), password = personal access token
+Tag: <git>
+
+Q: Failed to connect to github.com port 443: Timed out
+A: add github to hosts file
+cmd: ipconfig /flushdns
+Tag: <git> <github>
