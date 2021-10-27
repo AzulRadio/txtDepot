@@ -490,3 +490,19 @@ Q: Failed to connect to github.com port 443: Timed out
 A: add github to hosts file
 cmd: ipconfig /flushdns
 Tag: <git> <github>
+
+2021.8.18
+Q: favicon not displayed in browser
+A: <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	no "/" before favicon.ico
+Tag: <html>
+
+2021.10.9
+Q: install_ad​don('smlin​k.r2021b.w​in64.zip') Undefined function or variable 'install_addon'
+A: Need to download the .m file too
+Tag: <matlab> <plugin>
+
+2021.10.26
+Q: simulink multi-body "has a degenerate mass distribution on its base side"
+A: matlab function is dividing by 0
+Tag: <simulink> <matlab>
