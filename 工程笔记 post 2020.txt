@@ -506,3 +506,24 @@ Tag: <matlab> <plugin>
 Q: simulink multi-body "has a degenerate mass distribution on its base side"
 A: matlab function is dividing by 0
 Tag: <simulink> <matlab>
+
+2021.11.7
+Q: rosdep install openai_ros
+openai_ros: No definition of [python-catkin-pkg] for OS version [focal]
+A: ws/src/openai_ros/openai_ros/package.xml
+line 14, python-catkin-pkg -> python3-catkin-pkg
+Tag: <openai_ros> <ros>
+
+2021.11.17
+Q: mujoco_py install fail
+A: refer to https://github.com/danielstankw/Robosuite_Installation/blob/main/Linux_install.pdf
+and https://github.com/openai/mujoco-py#ubuntu-installtion-troubleshooting
+Tag: <mujoco> <ubuntu> <vmplayer>
+
+Q: import-im6.q16: attempt to perform an operation not allowed by the security policy `PS' @ error/constitute.c/IsCoderAuthorized/408.
+A: #!/usr/bin/env python3
+Tag: <python> <ubuntu>
+
+Q: mj_loadXML error: b'XML parse error at line 0, column 0:\nFailed to open file\n'
+A: write the full path instead of "~" when using mujoco_py.load_model_from_path()
+Tag: <mujoco_py>
