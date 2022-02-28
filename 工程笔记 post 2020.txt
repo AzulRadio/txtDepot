@@ -527,3 +527,64 @@ Tag: <python> <ubuntu>
 Q: mj_loadXML error: b'XML parse error at line 0, column 0:\nFailed to open file\n'
 A: write the full path instead of "~" when using mujoco_py.load_model_from_path()
 Tag: <mujoco_py>
+
+2021.11.28
+Q: virtual machine not enough space
+A: gparted
+right click /dev/sa1 -> resize
+Tag: <wmplayer> <disk> 
+
+2021.12.21
+Q: make test identify line number
+A: export CTEST_OUTPUT_ON_FAILURE=1
+Tag: <makefile> <ubuntu>
+
+2022.1.23
+Q: FileNotFoundError: [Errno 2] No such file or directory:
+A: + WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} in add_custom_command
+Tag: <cmake>
+
+Q: make[3]: *** No rule to make target '...', needed by '...'.  Stop.
+A: + file(GLOB_RECURSE YAML_FILES ${CMAKE_CURRENT_SOURCE_DIR}/*.yaml)
+Tag: <cmake>
+
+2022.1.24
+Q: moveit, demo_gazebo.launch, execute:
+[ERROR]: Unable to identify any set of controllers that can actuate the specified joints: [ elbow_pitch_joint elbow_roll_joint gripper_roll_joint shoulder_pan_joint shoulder_pitch_joint wrist_pitch_joint wrist_roll_joint ]
+A: in ros_controller.yaml
+Add the following: 
+controller_list:
+  - name: arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - shoulder_pitch_joint
+      - elbow_roll_joint
+      - elbow_pitch_joint
+      - wrist_roll_joint
+      - wrist_pitch_joint
+      - gripper_roll_joint
+see https://answers.ros.org/question/320990/moveit-unable-to-identify-any-set-of-controllers/
+Tag: <moveit>
+
+2022.1.30
+Q: git ask username and password everytime
+A: git config --global credential.helper store
+Tag: <git> <github>
+
+2022.2.11
+Q: Bind failed: Address already in use
+A: netstat -tulpn
+   kill <pid>
+Tag: <ubuntu>
+
+2022.2.14
+Q: group is not a chain
+A: need to define a tree structure, no parallel links
+Tag: <moveit>
+
+2022.2.28
+Q: ABORTED: No motion plan found. No execution attempted.
+A: Set target is out of reach
+Tag: <moveit> <python>
