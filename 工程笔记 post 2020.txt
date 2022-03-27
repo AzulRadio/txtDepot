@@ -567,6 +567,7 @@ controller_list:
       - gripper_roll_joint
 see https://answers.ros.org/question/320990/moveit-unable-to-identify-any-set-of-controllers/
 Tag: <moveit>
+Note: might be not funtional
 
 2022.1.30
 Q: git ask username and password everytime
@@ -588,3 +589,10 @@ Tag: <moveit>
 Q: ABORTED: No motion plan found. No execution attempted.
 A: Set target is out of reach
 Tag: <moveit> <python>
+
+2022.3.14
+Q: Could not find joint in 'hardware_interface::EffortJointInterface'.
+A: Check if moveit setting is the same as xacro transmission setting'
+In xacro should also be hardware_interface::EffortJointInterface if moveit is using hardware_interface::EffortJointInterface
+https://answers.ros.org/question/285977/could-not-find-resource-in-hardware_interfaceeffortjointinterface/
+Tag: <moveit>
