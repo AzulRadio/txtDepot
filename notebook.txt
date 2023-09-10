@@ -596,3 +596,64 @@ A: Check if moveit setting is the same as xacro transmission setting'
 In xacro should also be hardware_interface::EffortJointInterface if moveit is using hardware_interface::EffortJointInterface
 https://answers.ros.org/question/285977/could-not-find-resource-in-hardware_interfaceeffortjointinterface/
 Tag: <moveit>
+
+2022.5.31
+Q: copy and paste from one vim to another
+A: :echo has('clipboard')
+if the command above returns 0, then
+sudo apt-get install vim-gtk
+then
+"+y to copy
+"+p to paste
+Tag: <vim>
+
+2022.6.8
+Q: Gazebo Ignition froze at launch
+GUI requesting list of world names. The server may be busy downloading resources. Please be patient.
+A: ps aux | grep gazebo
+kill -9 <pid>
+Tag: <gazebo> <ignition>
+
+2022.6.13
+Q: GridLayout always in first row first column
+A: need to specify height and width
+Tag: <qml>
+
+2022.9.18
+Q: Oracle Virtual Box Ubuntu setup
+Kernel Panic
+A: Need at least 2 cores to start the setup
+Tag: <ubuntu> <oracle_virtual_box>
+
+2022.9.30
+Q: Jquery not working
+A: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>$(document).ready(function(){$("a").attr("href", "http://www.google.com/")});</script>
+Make it 2 <script> tags
+Tag: <jquery> <html>
+
+2022.10.2
+Q: WARN common.c: Invalid flash type, please check device declaration
+A: unclear. Cool down, change USB port, and make clean solves the problem
+Tag: <stm32>
+
+2023.3.25
+Q: Attribute.color doesn't work for shader nodes
+A: Use Color Attribute
+Note: Color Attribute display the vertex color, can be obtained from sculpting->paint or vertex painting
+Can only be seen in solid mode. Can't be seen in material mode.
+Tag: <blender>
+
+2023.9.6
+Q: set vim tab size
+A: 
+:set tabstop=4
+:set expandtab
+Tag: <vim>
+
+2023.9.7
+Q: generate core dump file in Ubuntu 20.04
+A: /var/lib/apport/coredump/
+ulimit -c // see number of core file allowed, as per terminal
+ulimit -c unlimited
+Tag: <ubuntu>
