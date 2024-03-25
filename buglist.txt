@@ -665,3 +665,13 @@ A: Add
 \end{sloppypar}
 at the beginning and the end of the document
 Tag: <pdflatex> <windows>
+
+2024.3.24
+Q: ROS2 humble with Gazebo Ignition
+When ros2 launch: package 'gazebo_ros' not found
+When install gazebo_ros from apt install:  gz-tools2 : Conflicts: gazebo (>= 11.0.0) but 11.10.2+dfsg-1 is to be installed
+E: Error, pkgProblemResolver::Resolve generated breaks, this may be caused by held packages.
+A: sudo apt remove gz-harmonic && sudo apt autoremove
+sudo apt install ros-humble-gazebo-ros-pkgs
+Maybe Gazebo from binary doesn't go along with gazebo_ros as a pkg
+Tag: <humble> <ros2> <gazebo>
