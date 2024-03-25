@@ -657,3 +657,11 @@ A: /var/lib/apport/coredump/
 ulimit -c // see number of core file allowed, as per terminal
 ulimit -c unlimited
 Tag: <ubuntu>
+
+2023.10.3
+Q: Overfull \hbox (18.19638pt too wide) in paragraph at lines
+A: Add
+\begin{sloppypar}
+\end{sloppypar}
+at the beginning and the end of the document
+Tag: <pdflatex> <windows>
